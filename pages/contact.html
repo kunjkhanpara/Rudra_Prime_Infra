@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Contact | Rudra Prime Infra LLP</title>
+<meta name="description" content="Contact Rudra Prime Infra LLP for solar EPC, civil, structural, piling, electrical and manpower project enquiries.">
+<meta name="theme-color" content="#061a31">
+<link rel="icon" href="../assets/img/logo.jpg">
+<link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body data-page="contact">
+<div id="site-header"></div>
+
+<section class="page-hero">
+  <div class="container">
+    <span class="breadcrumb">Rudra Prime Infra / Contact</span>
+    <h1>Contact</h1>
+    <p>Talk to the Rudra Prime Infra team about your next project.</p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container grid-2">
+    <div class="reveal">
+      <span class="eyebrow">Reach Rudra Prime</span>
+      <h2>Project enquiries & execution discussions.</h2>
+      <div class="contact-box" style="margin-top:28px">
+        <div class="contact-item"><b>Phone</b><a href="tel:+919722415741">+91 97224 15741</a> · <a href="tel:+919265531593">+91 92655 31593</a></div>
+        <div class="contact-item"><b>Email</b><a href="mailto:rudraprimeinfra@gmail.com">rudraprimeinfra@gmail.com</a></div>
+        <div class="contact-item"><b>Registered office</b><span>Office No. 108, First Floor, Time Square Empire, Mirzapur Road, Bhuj, Kachchh, Gujarat – 370001, India</span></div>
+        <div class="contact-item"><b>Branch office</b><span>Tharad, Banaskantha, Gujarat – 385565, India</span></div>
+        <div class="contact-item"><b>GSTIN</b><span>24ABMFR2469K1ZP</span></div>
+      </div>
+    </div>
+
+    <div class="card" style="padding:28px">
+      <span class="eyebrow">Quick enquiry</span>
+      <h3 style="font-size:25px;margin:9px 0 20px">Tell us what you need.</h3>
+      <form id="contactForm">
+        <div class="form-grid">
+          <div class="field"><label>Name</label><input id="name" required placeholder="Your name"></div>
+          <div class="field"><label>Phone</label><input id="phone" required placeholder="+91 ..."></div>
+          <div class="field"><label>Email</label><input id="email" type="email" placeholder="you@example.com"></div>
+          <div class="field"><label>Service</label><select id="service"><option>Solar EPC / Site Work</option><option>Civil & Infrastructure</option><option>Piling & Foundation</option><option>Electrical & Cabling</option><option>Structural Steel</option><option>Manpower Supply</option><option>Other</option></select></div>
+          <div class="field full"><label>Project details</label><textarea id="message" required placeholder="Location, scope, capacity, timeline, manpower or equipment requirement..."></textarea></div>
+          <div class="field full"><button class="btn btn-primary" type="submit">Prepare email enquiry ↗</button></div>
+        </div>
+      </form>
+      <p class="note" style="margin-top:12px">No backend or form data storage is used. Your default mail application will open with the enquiry pre-filled.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section alt">
+  <div class="container section-head reveal">
+    <div><span class="eyebrow">Documents</span><h2>Download the source company material.</h2></div>
+  </div>
+  <div class="container grid-3">
+    <a class="card service-card reveal" href="../assets/docs/Rudra_Prime_Infra_Company_Profile.pdf"><span class="service-no">PDF</span><div class="service-icon">▤</div><h3>Company Profile</h3><p>Primary 14-page company profile supplied for this website build.</p></a>
+    <a class="card service-card reveal" href="../assets/docs/5MW_Solar_Power_Project_Gujarat.pptx"><span class="service-no">PPTX</span><div class="service-icon">◫</div><h3>5 MW Solar Project</h3><p>12-slide project deck supplied for the Gujarat solar opportunity.</p></a>
+    <a class="card service-card reveal" href="../assets/docs/Rudra_Prime_Infra_Company_Profile_Alternate.pdf"><span class="service-no">PDF</span><div class="service-icon">▤</div><h3>Alternate Profile</h3><p>Additional company profile version retained for reference.</p></a>
+  </div>
+</section>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector("#contactForm");
+  if(!form) return;
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const name = encodeURIComponent(document.querySelector("#name").value);
+    const phone = encodeURIComponent(document.querySelector("#phone").value);
+    const email = encodeURIComponent(document.querySelector("#email").value);
+    const service = encodeURIComponent(document.querySelector("#service").value);
+    const message = encodeURIComponent(document.querySelector("#message").value);
+    const body = `Name: ${name}%0D%0APhone: ${phone}%0D%0AEmail: ${email}%0D%0AService: ${service}%0D%0A%0D%0AProject details:%0D%0A${message}`;
+    window.location.href = `mailto:rudraprimeinfra@gmail.com?subject=Project%20Enquiry%20-%20Rudra%20Prime%20Infra&body=${body}`;
+  });
+});
+</script>
+
+<div id="site-footer"></div>
+<script src="../js/components.js"></script>
+</body>
+</html>
