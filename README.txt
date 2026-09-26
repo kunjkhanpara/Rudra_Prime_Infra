@@ -1,33 +1,20 @@
-RUDRA PRIME INFRA LLP — NEW RESPONSIVE WEBSITE
-================================================
+RUDRA PRIME INFRA LLP — WEBSITE PACKAGE
 
-Folder name:
-    rudra_prime_infra
+Static, responsive multi-page website for Rudra Prime Infra LLP.
 
-Stack:
-    Pure HTML5 + CSS3 + Vanilla JavaScript
-    No build step and no backend required.
+Main pages:
+- index.html — Home / company overview
+- pages/about.html — Company profile, workforce, equipment, HSE
+- pages/services.html — Full capabilities and equipment
+- pages/projects.html — Documented project track record
+- pages/solar.html — Separate 5 MW Solar Power Project deck
+- pages/gallery.html — Project/site gallery with lightbox
+- pages/careers.html — Current hiring status: Currently not hiring
+- pages/contact.html — Contact details and static email enquiry form
 
-START LOCALLY:
-    Open index.html in a browser.
+Important content distinction:
+The 5 MW Solar Power Project is presented as a separate private-review project concept from the supplied PPTX. It is not presented as a completed Rudra Prime Infra project.
 
-PAGES:
-    index.html
-    pages/about.html
-    pages/services.html
-    pages/projects.html
-    pages/solar.html
-    pages/gallery.html
-    pages/contact.html
+The Vibe Infra Power profile supplied alongside the Rudra Prime documents was treated as a separate company's material and its company-specific facts were not merged into Rudra Prime Infra's content.
 
-ASSETS:
-    assets/img/   — logo and site/project imagery
-    assets/docs/  — supplied company profile PDFs and 5 MW project PPTX
-
-DEPLOYMENT:
-    GitHub Pages: upload the entire rudra_prime_infra folder contents to the repository root.
-    Netlify / Vercel: deploy as a static site; no build command is required.
-
-IMPORTANT CONTENT NOTE:
-    Company facts, project track record, workforce/equipment figures and contact details are based on the supplied Rudra Prime Infra LLP company profiles.
-    The 5 MW Solar Power Project page is based on the supplied private-review PPTX and is presented separately from the completed-work track record.
+No backend, database or external framework is required. The site is suitable for GitHub Pages.
